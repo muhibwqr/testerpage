@@ -1,163 +1,125 @@
-import { Oswald, Inter } from 'next/font/google';
+import { Bebas_Neue, Manrope } from 'next/font/google';
 
-const oswald = Oswald({ subsets: ['latin'], weight: ['400', '600'] });
-const inter = Inter({ subsets: ['latin'] });
+const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: '400' });
+const manrope = Manrope({ subsets: ['latin'] });
 
-export default function AgenticFlow() {
+export default function SynthetixAI() {
   return (
-    <div className={`min-h-screen bg-white ${inter.className}`}>
+    <div className={`min-h-screen bg-white text-black ${manrope.className}`}>
       {/* Navigation */}
-      <nav className="border-b border-gray-100 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className={`text-2xl font-bold text-black ${oswald.className}`}>
-              AGENTIC FLOW
-            </div>
-            <a
-              href="https://muhib.com"
-              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 text-sm font-medium transition-colors duration-200"
-            >
-              Get started
-            </a>
+      <nav className="border-b border-black px-4 md:px-8 py-6">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className={`text-2xl md:text-3xl font-bold ${bebasNeue.className}`}>
+            SYNTHETIX AI
           </div>
+          <a 
+            href="https://linkedin.com"
+            className="bg-black text-white px-6 md:px-8 py-3 text-sm md:text-base font-semibold hover:bg-gray-900 transition-colors"
+          >
+            Get started
+          </a>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <h1 className={`text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-semibold text-black leading-none mb-8 ${oswald.className}`}>
-                UNLEASH YOUR
-                <span className="block text-red-600">PEAK</span>
-                PERFORMANCE
-              </h1>
-              <p className="text-xl lg:text-2xl text-gray-700 mb-10 leading-relaxed">
-                Custom AI agents that amplify your capabilities, automate your workflows, and accelerate your success
-              </p>
-              <a
-                href="https://muhib.com"
-                className="inline-block bg-black hover:bg-gray-900 text-white px-12 py-4 text-lg font-medium transition-colors duration-200"
-              >
-                Get started
-              </a>
-            </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-red-600 transform rotate-3"></div>
-              <div className="relative bg-black p-8 lg:p-12 text-white">
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="w-3 h-3 bg-red-600 rounded-full"></div>
-                    <div className="text-sm text-gray-300">AI AGENT ACTIVE</div>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="bg-gray-800 p-4 border-l-4 border-red-600">
-                      <div className="text-sm text-gray-400 mb-1">WORKFLOW OPTIMIZATION</div>
-                      <div className="text-white">Automated 47 tasks today</div>
-                    </div>
-                    <div className="bg-gray-800 p-4 border-l-4 border-red-600">
-                      <div className="text-sm text-gray-400 mb-1">PERFORMANCE BOOST</div>
-                      <div className="text-white">+340% efficiency increase</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="bg-gray-50 py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl sm:text-5xl lg:text-6xl font-semibold text-black mb-6 ${oswald.className}`}>
-              TRANSFORM POTENTIAL
-              <span className="block text-red-600">INTO PERFORMANCE</span>
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="group">
-              <div className="bg-white p-8 lg:p-10 border-4 border-black hover:border-red-600 transition-colors duration-300">
-                <div className="w-16 h-16 bg-red-600 mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-white"></div>
-                </div>
-                <h3 className={`text-2xl lg:text-3xl font-semibold text-black mb-4 ${oswald.className}`}>
-                  INTENTIONAL
-                  <span className="block">AI DESIGN</span>
-                </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  AI agents that align with your goals and working style, designed with purpose and precision
-                </p>
-              </div>
-            </div>
-            
-            <div className="group">
-              <div className="bg-white p-8 lg:p-10 border-4 border-black hover:border-red-600 transition-colors duration-300">
-                <div className="w-16 h-16 bg-black mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-red-600"></div>
-                </div>
-                <h3 className={`text-2xl lg:text-3xl font-semibold text-black mb-4 ${oswald.className}`}>
-                  POWERFUL
-                  <span className="block">BRANDING</span>
-                </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Maintain your professional identity while leveraging AI capabilities that enhance your brand
-                </p>
-              </div>
-            </div>
-            
-            <div className="group">
-              <div className="bg-white p-8 lg:p-10 border-4 border-black hover:border-red-600 transition-colors duration-300">
-                <div className="w-16 h-16 bg-red-600 mb-6 flex items-center justify-center">
-                  <div className="w-8 h-8 bg-black"></div>
-                </div>
-                <h3 className={`text-2xl lg:text-3xl font-semibold text-black mb-4 ${oswald.className}`}>
-                  PERFORMANCE
-                  <span className="block">OPTIMIZATION</span>
-                </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  Turn AI into your competitive advantage with systems built for peak performance
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="bg-black py-20 lg:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className={`text-4xl sm:text-5xl lg:text-6xl font-semibold text-white mb-8 ${oswald.className}`}>
-            READY TO
-            <span className="block text-red-600">DOMINATE?</span>
-          </h2>
-          <p className="text-xl lg:text-2xl text-gray-300 mb-12 leading-relaxed">
-            Join high-performing professionals who've transformed their potential into measurable performance
+      <section className="px-4 md:px-8 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="w-16 h-1 bg-red-600 mx-auto mb-8"></div>
+          <h1 className={`text-5xl md:text-8xl lg:text-9xl font-bold mb-8 leading-none ${bebasNeue.className}`}>
+            AI AGENTS<br />THAT ACTUALLY<br />WORK
+          </h1>
+          <div className="w-24 h-1 bg-red-600 mx-auto mb-12"></div>
+          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-16 leading-relaxed">
+            Stop wrestling with complex automation. Our intelligent agents handle your daily tasks with precision and intention.
           </p>
-          <a
-            href="https://muhib.com"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white px-16 py-5 text-xl font-medium transition-colors duration-200"
+          <a 
+            href="https://linkedin.com"
+            className="inline-block bg-red-600 text-white px-12 py-4 text-lg font-bold hover:bg-red-700 transition-colors"
           >
             Get started
           </a>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-white border-t border-gray-100 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className={`text-2xl font-bold text-black mb-4 md:mb-0 ${oswald.className}`}>
-              AGENTIC FLOW
+      {/* Features Section */}
+      <section className="px-4 md:px-8 py-16 md:py-24 bg-black text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="w-16 h-1 bg-red-600 mb-8"></div>
+          <h2 className={`text-4xl md:text-6xl font-bold mb-16 ${bebasNeue.className}`}>
+            PRECISION BY DESIGN
+          </h2>
+          <div className="grid md:grid-cols-3 gap-12 md:gap-16">
+            <div className="border-l-4 border-red-600 pl-8">
+              <h3 className={`text-2xl md:text-3xl font-bold mb-6 ${bebasNeue.className}`}>
+                INTENTIONAL AI
+              </h3>
+              <p className="text-lg leading-relaxed">
+                Our agents understand context and nuance, making decisions that align with your goals and values.
+              </p>
             </div>
-            <div className="text-gray-600">
-              Transform potential into performance with intelligent AI agents
+            <div className="border-l-4 border-red-600 pl-8">
+              <h3 className={`text-2xl md:text-3xl font-bold mb-6 ${bebasNeue.className}`}>
+                POWERFUL BRANDING
+              </h3>
+              <p className="text-lg leading-relaxed">
+                Elevate your professional presence with tools that enhance rather than replace your expertise.
+              </p>
+            </div>
+            <div className="border-l-4 border-red-600 pl-8">
+              <h3 className={`text-2xl md:text-3xl font-bold mb-6 ${bebasNeue.className}`}>
+                SEAMLESS INTEGRATION
+              </h3>
+              <p className="text-lg leading-relaxed">
+                Works behind the scenes, integrating with your existing workflow without disruption.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Proof Section */}
+      <section className="px-4 md:px-8 py-16 md:py-24">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="w-16 h-1 bg-red-600 mx-auto mb-8"></div>
+          <h2 className={`text-4xl md:text-6xl font-bold mb-12 ${bebasNeue.className}`}>
+            RESULTS SPEAK LOUDER
+          </h2>
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="text-left">
+              <div className="border-4 border-black p-8 mb-8">
+                <div className="text-6xl md:text-8xl font-bold text-red-600 mb-4">95%</div>
+                <p className="text-xl">Task completion accuracy</p>
+              </div>
+              <div className="border-4 border-black p-8">
+                <div className="text-6xl md:text-8xl font-bold text-red-600 mb-4">3X</div>
+                <p className="text-xl">Faster workflow execution</p>
+              </div>
+            </div>
+            <div className="text-left">
+              <p className="text-xl md:text-2xl mb-8 leading-relaxed">
+                Our AI agents don't just automate—they understand. Every task is executed with the precision and intention you'd expect from your best team member.
+              </p>
+              <a 
+                href="https://linkedin.com"
+                className="inline-block bg-black text-white px-8 py-4 text-lg font-bold hover:bg-gray-900 transition-colors"
+              >
+                Get started
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-black text-white px-4 md:px-8 py-12">
+        <div className="max-w-7xl mx-auto text-center">
+          <div className={`text-3xl md:text-4xl font-bold mb-8 ${bebasNeue.className}`}>
+            SYNTHETIX AI
+          </div>
+          <div className="w-24 h-1 bg-red-600 mx-auto mb-8"></div>
+          <p className="text-lg">
+            AI agents that make life easier
+          </p>
         </div>
       </footer>
     </div>
